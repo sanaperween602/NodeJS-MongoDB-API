@@ -5,7 +5,7 @@ const JWT_SECRET="sana123"
 const {UserModel , TodoModel}=require ("./db")
 const mongoose=require("mongoose");
 const {z}=require("zod");
-mongoose.connect("mongodb+srv://sana602perween_db_user:daniyal602@cluster0.z8crdti.mongodb.net/todosana-22");
+mongoose.connect("mongodb+srv://sana602perween_db_user:password@cluster0.z8crdti.mongodb.net/todosana-22");
 
 mongoose.connection.once("open", () => {
     console.log("Connected to:", mongoose.connection.name);
